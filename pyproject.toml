@@ -1,0 +1,19 @@
+[project]
+name = "fluc-recommenders"
+version = "0.1.0"
+description = "Recommendation system for the The Fluc News Article Platform."
+authors = [
+    {name = "The Fluc AI/ML Team"}
+]
+license = {text = "Apache 2.0 license"}
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi[standard] (>=0.119.1,<0.120.0)",
+    "onnxruntime (>=1.23.1,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
