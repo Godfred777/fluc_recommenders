@@ -1,4 +1,4 @@
-from inference import InferenceService
+from .inference import InferenceService
 import numpy as np
 
 inference_model_path = "path/to/your/model.onnx"
