@@ -1,4 +1,5 @@
 from fastapi.routing import APIRouter
+from services import run_prediction
 
 router = APIRouter()
 
@@ -10,5 +11,5 @@ async def get_status():
 @router.get("/recommendations")
 async def get_recommendations(user_id: int):
     # Placeholder logic for generating recommendations
-    recommendations = [f"item_{i}" for i in range(5)]
+    recommendations = run_prediction()
     return {"user_id": user_id, "recommendations": recommendations}
